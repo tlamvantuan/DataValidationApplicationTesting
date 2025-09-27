@@ -50,7 +50,7 @@ public class DateUtilities {
      * @param year Year to check
      * @return true if leap year, false otherwise
      */
-    private boolean isLeapYear(int year) {
+    public boolean isLeapYear(int year) {
         return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
     }
 }
