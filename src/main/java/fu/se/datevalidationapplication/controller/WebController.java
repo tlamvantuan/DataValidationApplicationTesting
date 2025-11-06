@@ -37,8 +37,8 @@ public class WebController {
                                          @RequestParam int year) {
         boolean isValid = dateUtilities.checkDate(day, month, year);
         String message = isValid ?
-                String.format("✅ Ngày %02d/%02d/%d là hợp lệ!", day, month, year) :
-                String.format("❌ Ngày %02d/%02d/%d không hợp lệ!", day, month, year);
+                String.format("%02d/%02d/%d is valid!", day, month, year) :
+                String.format("%02d/%02d/%d is invalid!", day, month, year);
 
         return new ValidationResult(isValid, message, day, month, year);
     }

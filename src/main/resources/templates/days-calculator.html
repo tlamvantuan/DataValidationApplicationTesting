@@ -50,7 +50,7 @@
                                     <option value="5">Tháng 5 - May</option>
                                     <option value="6">Tháng 6 - June</option>
                                     <option value="7">Tháng 7 - July</option>
-                                    <option value="8">Tháng 8 - August</option>
+                                    <option value="8">Tháng 8 - August< /option>
                                     <option value="9">Tháng 9 - September</option>
                                     <option value="10">Tháng 10 - October</option>
                                     <option value="11">Tháng 11 - November</option>
@@ -138,7 +138,7 @@
     function displayCalcResult(result) {
         const resultDiv = document.getElementById('calcResult');
         const alertDiv = document.getElementById('calcResultAlert');
-        const messageDiv = document.getElementById('calcResultMessage');
+                const messageDiv = document.getElementById('calcResultMessage');
 
         alertDiv.className = result.days > 0 ? 'alert alert-success' : 'alert alert-danger';
         messageDiv.textContent = result.message;
